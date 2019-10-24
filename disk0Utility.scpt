@@ -6,14 +6,12 @@ if answer = "Spin Up" then
 #mount first volume
 	do shell script "diskutil mount REPLACE-THIS-WITH-VOLUME-UUID"
 #tell the user it's done
-	display dialog "Mounted first volume.
-(disk0s2)" with title "disk0 Utility" buttons {"Continue"} giving up after 3 #dialog autocloses after 3 sec
+	display dialog "Mounted first volume." with title "disk0 Utility" buttons {"Continue"} giving up after 3 #dialog autocloses after 3 sec
 	
 #mount second volume
 	do shell script "diskutil mount REPLACE-THIS-WITH-ANOTHER-VOLUME-UUID"
 #tell the user it's done
-	display dialog "Mounted second volume.
-(disk0s5)" with title "disk0 Utility" buttons {"Finish"} giving up after 3 #dialog autocloses after 3 sec
+	display dialog "Mounted second volume." with title "disk0 Utility" buttons {"Finish"} giving up after 3 #dialog autocloses after 3 sec
 	
 	
 else if answer = "Spin Down" then
